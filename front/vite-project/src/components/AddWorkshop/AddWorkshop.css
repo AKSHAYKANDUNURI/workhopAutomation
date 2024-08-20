@@ -1,0 +1,61 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    background-color: #fffaf0;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #888;
+}
