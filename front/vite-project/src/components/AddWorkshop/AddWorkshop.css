@@ -1,4 +1,4 @@
-.container {
+.workshopContainer {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -8,15 +8,14 @@
     background-color: #ffffff;
 }
 
-form {
+.workshopForm {
     display: flex;
     flex-direction: column;
 }
 
-input[type="text"],
-input[type="number"],
-select,
-textarea {
+.workshopInput,
+.workshopSelect,
+.workshopTextarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -27,19 +26,19 @@ textarea {
     color: #333;
 }
 
-textarea {
+.workshopTextarea {
     resize: vertical;
     min-height: 100px;
     background-color: #fffaf0;
 }
 
-label {
+.workshopLabel {
     margin-top: 15px;
     font-weight: bold;
     color: #555;
 }
 
-button {
+.workshopButton {
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
@@ -51,11 +50,11 @@ button {
     align-self: flex-end;
 }
 
-button:hover {
+.workshopButton:hover {
     background-color: #218838;
 }
 
-input[type="text"]::placeholder,
-textarea::placeholder {
+.workshopInput::placeholder,
+.workshopTextarea::placeholder {
     color: #888;
 }

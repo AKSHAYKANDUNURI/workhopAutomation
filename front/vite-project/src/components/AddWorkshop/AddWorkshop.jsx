@@ -27,17 +27,18 @@ function AddWorkshop() {
   };
 
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit(createWorkshop)}>
+    <div className="workshopContainer">
+      <form onSubmit={handleSubmit(createWorkshop)} className="workshopForm">
         <input
           type="text"
           placeholder="Workshop Name"
+          className="workshopInput"
           {...register("workshopName", { required: "Enter Workshop Name" })}
         />
         <br />
-        <label>Workshop Type</label>
+        <label className="workshopLabel">Workshop Type</label>
         <br />
-        <select {...register("workshopType", { required: "Select Workshop Type" })}>
+        <select className="workshopSelect" {...register("workshopType", { required: "Select Workshop Type" })}>
           <option value="">None</option>
           <option value="ai">AI</option>
           <option value="cybersecurity">Cyber Security</option>
@@ -46,11 +47,12 @@ function AddWorkshop() {
         <br />
         <textarea
           placeholder="Workshop Description"
+          className="workshopTextarea"
           {...register("workshopDesc", { required: "Enter Workshop Description" })}
         ></textarea>
         <br />
-        <label>Venue</label>
-        <select {...register("workshopVenue", { required: "Select Workshop Venue" })}>
+        <label className="workshopLabel">Venue</label>
+        <select className="workshopSelect" {...register("workshopVenue", { required: "Select Workshop Venue" })}>
           <option value="">None</option>
           <option value="apj">APJ Audi</option>
           <option value="ks">KS Audi</option>
@@ -60,20 +62,23 @@ function AddWorkshop() {
         <br />
         <input
           type="date"
+          className="workshopInput"
           {...register("workshopDate", { required: "Enter Workshop Date" })}
         />
         <input
           type="time"
+          className="workshopInput"
           {...register("workshoptime", { required: "Enter Workshop Time" })}
         />
         <br />
-        <label>Capacity</label>
+        <label className="workshopLabel">Capacity</label>
         <input
           type="number"
+          className="workshopInput"
           {...register("workshopCapacity", { required: "Enter Workshop Capacity" })}
         />
         <br />
-        <button type="submit">Add Workshop</button>
+        <button type="submit" className="workshopButton">Add Workshop</button>
       </form>
     </div>
   );
