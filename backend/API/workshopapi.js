@@ -76,4 +76,26 @@ workshopApp.get("/",async(req,res)=>{
     }
 });
 
+workshopApp.delete('/', async (req, res) => {
+    try {
+        const workshopCollection = req.app.get("workshopCollection");
+        const workshopData = req.query;
+
+        const result = await workshopCollection.deleteOne({
+            workshoptime: workshopData.workshoptime,
+            workshopDate: workshopData.workshopDate
+        });
+
+        if (result.deletedCount === 1) {
+            res.status(200).send({ message: "Workshop deleted successfully!" });
+        } else {
+            res.status(404).send({ message: "Workshop not found!" });
+        }
+    } catch (error) {
+        console.error("Error deleting workshop:", error);
+        res.status(500).send({ message: "Internal Server Error" });
+    }
+});
+
+
 module.exports = workshopApp;
