@@ -17,7 +17,7 @@ function WorkshopCard({ item }) {
                  <p>Workshop Venue : {item.workshopVenue}</p>
                  <p>Workshop Date : {item.workshopDate}</p>
                  <p>Workshop Time : {item.workshoptime}</p>
-                 <p>Workshop Capacity : {item.workshopCapacity}</p>
+                 <p>Available Slots : {item.availableSlots}</p>
                  <button onClick={register}>Register</button>
             </div>
         </div>

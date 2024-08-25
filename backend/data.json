@@ -1,137 +1,212 @@
 [
-    {
-        "workshopName": "atha",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "atha",
-        "workshopVenue": "ks",
-        "workshopDate": "2024-08-21",
-        "workshoptime": "21:24",
-        "workshopCapacity": 5
-    },
-    {
-        "workshopName": "hacker",
-        "workshopType": "cloudcomputing",
-        "workshopDesc": "hacker",
-        "workshopVenue": "b",
-        "workshopDate": "2024-08-24",
-        "workshoptime": "01:24",
-        "workshopCapacity": 55
-    },
-    {
-        "workshopName": "lolipop",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "lolipop",
-        "workshopVenue": "pg",
-        "workshopDate": "2024-08-15",
-        "workshoptime": "07:24",
-        "workshopCapacity": 78
-    },
-    {
-        "workshopName": "atha",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "atha",
-        "workshopVenue": "ks",
-        "workshopDate": "2024-08-21",
-        "workshoptime": "21:24",
-        "workshopCapacity": 5
-    },
-    {
-        "workshopName": "hacker",
-        "workshopType": "cloudcomputing",
-        "workshopDesc": "hacker",
-        "workshopVenue": "b",
-        "workshopDate": "2024-08-24",
-        "workshoptime": "01:24",
-        "workshopCapacity": 55
-    },
-    {
-        "workshopName": "lolipop",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "lolipop",
-        "workshopVenue": "pg",
-        "workshopDate": "2024-08-15",
-        "workshoptime": "07:24",
-        "workshopCapacity": 78
-    },
-    {
-        "workshopName": "atha",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "atha",
-        "workshopVenue": "ks",
-        "workshopDate": "2024-08-21",
-        "workshoptime": "21:24",
-        "workshopCapacity": 5
-    },
-    {
-        "workshopName": "hacker",
-        "workshopType": "cloudcomputing",
-        "workshopDesc": "hacker",
-        "workshopVenue": "b",
-        "workshopDate": "2024-08-24",
-        "workshoptime": "01:24",
-        "workshopCapacity": 55
-    },
-    {
-        "workshopName": "lolipop",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "lolipop",
-        "workshopVenue": "pg",
-        "workshopDate": "2024-08-15",
-        "workshoptime": "07:24",
-        "workshopCapacity": 78
-    },
-    {
-        "workshopName": "atha",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "atha",
-        "workshopVenue": "ks",
-        "workshopDate": "2024-08-21",
-        "workshoptime": "21:24",
-        "workshopCapacity": 5
-    },
-    {
-        "workshopName": "hacker",
-        "workshopType": "cloudcomputing",
-        "workshopDesc": "hacker",
-        "workshopVenue": "b",
-        "workshopDate": "2024-08-24",
-        "workshoptime": "01:24",
-        "workshopCapacity": 55
-    },
-    {
-        "workshopName": "lolipop",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "lolipop",
-        "workshopVenue": "pg",
-        "workshopDate": "2024-08-15",
-        "workshoptime": "07:24",
-        "workshopCapacity": 78
-    },
-    {
-        "workshopName": "atha",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "atha",
-        "workshopVenue": "ks",
-        "workshopDate": "2024-08-21",
-        "workshoptime": "21:24",
-        "workshopCapacity": 5
-    },
-    {
-        "workshopName": "hacker",
-        "workshopType": "cloudcomputing",
-        "workshopDesc": "hacker",
-        "workshopVenue": "b",
-        "workshopDate": "2024-08-24",
-        "workshoptime": "01:24",
-        "workshopCapacity": 55
-    },
-    {
-        "workshopName": "lolipop",
-        "workshopType": "cybersecurity",
-        "workshopDesc": "lolipop",
-        "workshopVenue": "pg",
-        "workshopDate": "2024-08-15",
-        "workshoptime": "07:24",
-        "workshopCapacity": 78
-    }
+  {
+    "workshopName": "Introduction to Artificial Intelligence",
+    "workshopType": "ai",
+    "workshopDesc": "Learn the basics of AI and its real-world applications.",
+    "workshopVenue": "B",
+    "workshopDate": "2025-08-15",
+    "workshoptime": "10:00",
+    "workshopCapacity": 30,
+    "availableSlots": 30
+  },
+  {
+    "workshopName": "Cybersecurity Fundamentals",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Understanding the core principles of securing digital systems.",
+    "workshopVenue": "PG",
+    "workshopDate": "2024-02-20",
+    "workshoptime": "09:30",
+    "workshopCapacity": 25,
+    "availableSlots": 25
+  },
+  {
+    "workshopName": "Cloud Computing Basics",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "An introduction to cloud services and deployment models.",
+    "workshopVenue": "KS",
+    "workshopDate": "2025-11-05",
+    "workshoptime": "11:00",
+    "workshopCapacity": 40,
+    "availableSlots": 40
+  },
+  {
+    "workshopName": "Machine Learning Essentials",
+    "workshopType": "ai",
+    "workshopDesc": "Explore fundamental concepts of machine learning algorithms.",
+    "workshopVenue": "B",
+    "workshopDate": "2024-03-12",
+    "workshoptime": "14:00",
+    "workshopCapacity": 35,
+    "availableSlots": 35
+  },
+  {
+    "workshopName": "Network Security Advanced Techniques",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Deep dive into advanced methods for securing networks.",
+    "workshopVenue": "PG",
+    "workshopDate": "2025-09-18",
+    "workshoptime": "13:00",
+    "workshopCapacity": 20,
+    "availableSlots": 20
+  },
+  {
+    "workshopName": "Deploying Applications on the Cloud",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "Hands-on workshop on deploying and managing cloud applications.",
+    "workshopVenue": "KS",
+    "workshopDate": "2024-05-22",
+    "workshoptime": "15:30",
+    "workshopCapacity": 45,
+    "availableSlots": 45
+  },
+  {
+    "workshopName": "Deep Learning with TensorFlow",
+    "workshopType": "ai",
+    "workshopDesc": "Building neural networks using TensorFlow framework.",
+    "workshopVenue": "B",
+    "workshopDate": "2025-12-08",
+    "workshoptime": "10:00",
+    "workshopCapacity": 25,
+    "availableSlots": 25
+  },
+  {
+    "workshopName": "Ethical Hacking and Penetration Testing",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Learn techniques to identify and exploit vulnerabilities ethically.",
+    "workshopVenue": "PG",
+    "workshopDate": "2024-01-17",
+    "workshoptime": "09:00",
+    "workshopCapacity": 30,
+    "availableSlots": 30
+  },
+  {
+    "workshopName": "AWS Cloud Services Overview",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "Understanding various services offered by Amazon Web Services.",
+    "workshopVenue": "KS",
+    "workshopDate": "2025-10-25",
+    "workshoptime": "11:30",
+    "workshopCapacity": 50,
+    "availableSlots": 50
+  },
+  {
+    "workshopName": "Natural Language Processing Basics",
+    "workshopType": "ai",
+    "workshopDesc": "Introduction to processing and analyzing human language data.",
+    "workshopVenue": "B",
+    "workshopDate": "2024-04-05",
+    "workshoptime": "14:30",
+    "workshopCapacity": 40,
+    "availableSlots": 40
+  },
+  {
+    "workshopName": "Securing Web Applications",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Best practices for protecting web applications from attacks.",
+    "workshopVenue": "PG",
+    "workshopDate": "2025-07-14",
+    "workshoptime": "16:00",
+    "workshopCapacity": 35,
+    "availableSlots": 35
+  },
+  {
+    "workshopName": "Microsoft Azure Fundamentals",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "Getting started with Microsoft Azure services and solutions.",
+    "workshopVenue": "KS",
+    "workshopDate": "2024-06-10",
+    "workshoptime": "10:00",
+    "workshopCapacity": 30,
+    "availableSlots": 30
+  },
+  {
+    "workshopName": "Computer Vision with OpenCV",
+    "workshopType": "ai",
+    "workshopDesc": "Techniques for image and video analysis using OpenCV.",
+    "workshopVenue": "B",
+    "workshopDate": "2025-08-22",
+    "workshoptime": "13:00",
+    "workshopCapacity": 20,
+    "availableSlots": 20
+  },
+  {
+    "workshopName": "Introduction to Blockchain Security",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Understanding security aspects of blockchain technology.",
+    "workshopVenue": "PG",
+    "workshopDate": "2024-02-28",
+    "workshoptime": "15:00",
+    "workshopCapacity": 40,
+    "availableSlots": 40
+  },
+  {
+    "workshopName": "Google Cloud Platform Essentials",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "Overview of services and tools offered by Google Cloud Platform.",
+    "workshopVenue": "KS",
+    "workshopDate": "2025-11-11",
+    "workshoptime": "12:00",
+    "workshopCapacity": 25,
+    "availableSlots": 25
+  },
+  {
+    "workshopName": "Reinforcement Learning Introduction",
+    "workshopType": "ai",
+    "workshopDesc": "Basics of reinforcement learning and its applications.",
+    "workshopVenue": "B",
+    "workshopDate": "2024-03-19",
+    "workshoptime": "09:30",
+    "workshopCapacity": 35,
+    "availableSlots": 35
+  },
+  {
+    "workshopName": "Incident Response and Management",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Strategies for effective cybersecurity incident response.",
+    "workshopVenue": "PG",
+    "workshopDate": "2025-09-30",
+    "workshoptime": "11:00",
+    "workshopCapacity": 45,
+    "availableSlots": 45
+  },
+  {
+    "workshopName": "DevOps in Cloud Computing",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "Integrating DevOps practices with cloud platforms.",
+    "workshopVenue": "KS",
+    "workshopDate": "2024-05-07",
+    "workshoptime": "14:00",
+    "workshopCapacity": 30,
+    "availableSlots": 30
+  },
+  {
+    "workshopName": "AI in Healthcare",
+    "workshopType": "ai",
+    "workshopDesc": "Exploring AI applications in the healthcare industry.",
+    "workshopVenue": "B",
+    "workshopDate": "2025-12-20",
+    "workshoptime": "10:30",
+    "workshopCapacity": 25,
+    "availableSlots": 25
+  },
+  {
+    "workshopName": "Mobile Security Practices",
+    "workshopType": "cybersecurity",
+    "workshopDesc": "Protecting mobile devices and applications from threats.",
+    "workshopVenue": "PG",
+    "workshopDate": "2024-01-25",
+    "workshoptime": "13:30",
+    "workshopCapacity": 40,
+    "availableSlots": 40
+  },
+  {
+    "workshopName": "Serverless Architecture on AWS",
+    "workshopType": "cloudcomputing",
+    "workshopDesc": "Building and deploying serverless applications using AWS Lambda.",
+    "workshopVenue": "KS",
+    "workshopDate": "2025-10-08",
+    "workshoptime": "15:00",
+    "workshopCapacity": 35,
+    "availableSlots": 35
+  }
 ]

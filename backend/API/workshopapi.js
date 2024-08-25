@@ -11,8 +11,9 @@ const upload = multer({ storage: storage });
 workshopApp.post("/create", async (req, res) => {
     try {
         const workshopData = req.body;
-        const { workshopVenue, workshoptime, workshopDate } = workshopData;
+        const { workshopVenue, workshoptime, workshopDate,workshopCapacity } = workshopData;
 
+        const tempCapacity = parseInt(workshopCapacity, 10);
         const workshopCollection = req.app.get('workshopCollection');
 
         const existingWorkshop = await workshopCollection.findOne({
@@ -22,10 +23,16 @@ workshopApp.post("/create", async (req, res) => {
         });
 
         if (existingWorkshop) {
-            return res.status(400).send(); // No error message sent, only the status code
+            return res.status(400).send(); 
         }
 
-        const result = await workshopCollection.insertOne(workshopData);
+        const workshopData2 = { 
+            ...workshopData, 
+            workshopCapacity: tempCapacity, 
+            availableSlots: tempCapacity 
+        };
+
+        const result = await workshopCollection.insertOne(workshopData2);
 
         res.status(201).json({ message: 'Workshop created successfully', insertedId: result.insertedId });
     } catch (err) {
@@ -33,6 +40,8 @@ workshopApp.post("/create", async (req, res) => {
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
+
+
 
 
 workshopApp.post("/update",upload.single('attendenceDocument'), async(req,res)=>{
@@ -97,5 +106,55 @@ workshopApp.delete('/', async (req, res) => {
     }
 });
 
+workshopApp.put('/register', async(req, res) => {
+    try {
+        const registeredStudents = req.app.get('registeredStudents');
+        const workshopCollection = req.app.get("workshopCollection");
+
+        const workshopData = req.body;
+
+        const check = await registeredStudents.findOne({
+            hallTicket: workshopData.hallTicket,
+            workshopId: workshopData._id
+        });
+
+        if (check) {
+            return res.status(409).send({ message: "Student is already registered for this workshop" });
+        }
+
+        await registeredStudents.insertOne({
+            hallTicket: workshopData.hallTicket,
+            workshopId: workshopData._id
+        });
+
+        const tempData = await workshopCollection.findOne({
+            workshopDate: workshopData.workshopDate,
+            workshopVenue: workshopData.workshopVenue,
+            workshoptime: workshopData.workshoptime
+        }, {
+            projection: { _id: 1, availableSlots: 1 }
+        });
+
+        if (!tempData) {
+            return res.status(404).send({ message: "Workshop not found" });
+        }
+
+        if (tempData.availableSlots > 0) {
+            const newavailableSlots = tempData.availableSlots - 1;
+            await workshopCollection.updateOne(
+                { _id: tempData._id },
+                { $set: { availableSlots: newavailableSlots } }
+            );
+
+            return res.status(200).send({ message: "Workshop registered successfully" });
+        } else {
+            return res.status(400).send({ message: "Workshop is fully booked" });
+        }
+
+    } catch (error) {
+        console.error("Error in /register route:", error);
+        res.status(500).send({ message: "Internal server error" });
+    }
+});
 
 module.exports = workshopApp;

@@ -2,6 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import './AddWorkshop.css';
+import Sidebar from '../Sidebar/Sidebar';
+import { useNavigate } from 'react-router-dom';
 
 function AddWorkshop() {
   const { register, handleSubmit } = useForm();
@@ -11,7 +13,7 @@ function AddWorkshop() {
       const response = await axios.post('http://localhost:5000/workshopapi/create', workshopData, {
         headers: {
           'Content-Type': 'application/json',
-        },
+        }
       });
 
       if (response.status === 201) {
@@ -26,7 +28,13 @@ function AddWorkshop() {
     }
   };
 
+
+
   return (
+
+    <div className='mainContainer'>
+      <Sidebar/>
+    <div className="displayContainer">
     <div className="workshopContainer">
       <form onSubmit={handleSubmit(createWorkshop)} className="workshopForm">
         <input
@@ -81,6 +89,9 @@ function AddWorkshop() {
         <button type="submit" className="workshopButton">Add Workshop</button>
       </form>
     </div>
+    </div>
+    </div>
+
   );
 }
 

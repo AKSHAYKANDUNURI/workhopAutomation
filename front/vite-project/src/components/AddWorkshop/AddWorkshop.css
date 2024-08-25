@@ -1,11 +1,18 @@
-.workshopContainer {
-    max-width: 600px;
+.workshopContainer,.workshopContainer2 {
     margin: 50px auto;
     padding: 20px;
+   
+}
+
+.workshopContainer{
+    width: 50%;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff29;
+}
+.workshopContainer2{
+    width: 75vw;;
 }
 
 .workshopForm {
@@ -57,4 +64,16 @@
 .workshopInput::placeholder,
 .workshopTextarea::placeholder {
     color: #888;
+}
+
+
+.mainContainer,.mainContainer2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.displayContainer{
+    width: 70%;
+    
 }

@@ -1,16 +1,22 @@
 import React from 'react'
 import Filter from '../Filter/Filter'
+import Sidebar from '../Sidebar/Sidebar'
 
 function DeleteWorkshop() {
   return (
     <div>
-        <div className="container">
-            <label htmlFor="">Delete Workshop...!!</label>
+ <div className='mainContainer2'>
+      <Sidebar/>
+    <div className="displayContainer">
+    <div className="workshopContainer2">    
+    <Filter/>
 
         </div>
-        <Filter/>
 
     </div>
+    </div>
+    </div>
+
   )
 }
 

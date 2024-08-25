@@ -9,13 +9,16 @@ function WorkshopList() {
         const workshopDateTime = new Date(`${workshop.workshopDate}T${workshop.workshoptime}`);
         const now = new Date();
         return workshopDateTime > now;
+
     };
 
     const upcomingWorkshops = data.filter(isUpcomingWorkshop);
 
     return (
-
-            <div className="cardBundle">
+        <div>
+        <div className="displayContainer">
+                <h1>UpComing Workshops</h1>
+                  <div className="cardBundle">
                 {upcomingWorkshops.length > 0 ? (
                 upcomingWorkshops.map((item, index) => (
                     <div key={index} className="cardContainer">
@@ -26,6 +29,9 @@ function WorkshopList() {
                 <p>No upcoming workshops found.</p>
             )}
         </div>
+            </div>
+        </div>
+
     );
 }
 

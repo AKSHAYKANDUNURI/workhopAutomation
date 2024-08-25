@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './UpdateWorkshop.css';
+import Sidebar from '../Sidebar/Sidebar';
 
 function UpdateWorkshop() {
     const { register, handleSubmit } = useForm();
@@ -28,8 +29,10 @@ function UpdateWorkshop() {
     };
 
     return (
-        <div className="workshopContainer">
-            <form onSubmit={handleSubmit(updateWorkshop)} className="workshopForm">
+<div className='mainContainer'>
+      <Sidebar/>
+    <div className="displayContainer">
+    <div className="workshopContainer">            <form onSubmit={handleSubmit(updateWorkshop)} className="workshopForm">
                 <label htmlFor="" className="workshopLabel">Attended Strength</label>
                 <input
                     type="number"
@@ -48,6 +51,9 @@ function UpdateWorkshop() {
                 <button type="submit" className="workshopButton">Update Workshop Details</button>
             </form>
         </div>
+        </div>
+        </div>
+
     );
 }
 

@@ -1,14 +1,14 @@
 .containerFilter {
     display: flex;
-    
+    width: 60vw;
     background-color: #f5f5f516;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
     margin: 20px auto;
     gap: 15px;
     flex-wrap: wrap;
+
 }
 
 .lableFilter {
@@ -58,8 +58,11 @@
 }
 
 .cardBundle{
+    width: 100%;
+
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto  auto  ;
     gap: 30px;
     padding: 10px;
+    
 }
