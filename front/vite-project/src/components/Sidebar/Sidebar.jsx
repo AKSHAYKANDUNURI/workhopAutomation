@@ -10,12 +10,15 @@ function Sidebar() {
   };
 
   const update = () => {
-    navigate('/updateworkshop'); // Use absolute path
+    navigate('/updateworkshop'); 
+    window.location.reload();
+
   };
 
   const deletes = () => {
-    window.location.reload();
     navigate('/deleteworkshop'); // Use absolute path
+    window.location.reload();
+
   };
 
   return (

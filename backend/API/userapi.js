@@ -4,15 +4,12 @@ userApp.post("/", async (req, res) => {
 
 
     try {
-        const loginCred = req.body;
         const userCollection = req.app.get("userCollection");
 
         const user = await userCollection.findOne({username:req.body.username});
-
-
-        if (user) {
-            if(user.password === req.body.password)
-            res.status(200).send();
+         if (user) {
+            if(user.password === req.body.password )
+            res.status(200).send({role:user.role});
             else
             res.status(201).send();
 

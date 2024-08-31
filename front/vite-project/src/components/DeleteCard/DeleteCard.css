@@ -1,0 +1,72 @@
+.deleteContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+}
+.deleteCard{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.162);
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.419) 0px 54px 55px, rgba(0, 0, 0, 0.293) 0px -12px 30px, rgba(0, 0, 0, 0.381) 0px 4px 6px, rgba(0, 0, 0, 0.282) 0px 12px 13px, rgba(0, 0, 0, 0.189) 0px -3px 5px;
+}
+
+.deleteButton2 {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton2:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.deleteButton2:active {
+    background-color: #a93226; /* Even darker red on click */
+}
+
+
+.updateButton{
+    background-color: #12c066; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.updateButton:hover {
+    background-color: #109952; /* Darker red on hover */
+}
+
+.updateButton:active {
+    background-color: #0f5731; /* Even darker red on click */
+}
+
+
+
+.input{
+    background-color: rgba(255, 255, 255, 0.633);
+    border: 1px solid rgb(117, 111, 111);
+    height: 4vh;
+    width: 30vw;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 9px;
+}
+.combo{
+    display: flex;
+    flex-direction: row;
+    
+}
+

@@ -1,5 +1,10 @@
 [
     {"username" : "admin",
-     "password" : "admin"
+     "password" : "admin",
+     "role":"staff"
+    },
+    {"username" : "student",
+     "password" : "student",
+     "role":"student"
     }
 ]
